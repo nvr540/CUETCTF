@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: lime;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.container {
+    border: 2px solid lime;
+    padding: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+button {
+    background-color: lime;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.story {
+    font-size: 18px;
+    padding-bottom: 20px;
+}

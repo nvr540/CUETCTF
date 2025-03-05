@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack The System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="terminal">
+        <h1>>_ Hack The System</h1>
+        <p id="story">You've breached the firewall. The encrypted file is locked. Type with **magic speed** to decrypt it before the system detects you.</p>
+        <div id="word-container"></div>
+        <p id="hint">> Show your <strong>WPM</strong> to unlock the flag.</p>
+        <p id="wpm">WPM: </p>
+        <p id="result"></p>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>

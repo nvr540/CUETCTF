@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberBrew Coffee Shop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="terminal">
+        <h1>>_ Welcome to CyberBrew ☕</h1>
+        <p>Your session: <strong>{{ user }}</strong></p>
+
+        {% if user == "guest" %}
+            <p class="hint">Hint: Only <span class="highlight">admins</span> can access the <a href="/admin">secret menu</a>.</p>
+        {% endif %}
+
+        <a href="/menu">[ View Menu ]</a> |
+        <a href="/logout">[ Logout ]</a>
+    </div>
+</body>
+</html>

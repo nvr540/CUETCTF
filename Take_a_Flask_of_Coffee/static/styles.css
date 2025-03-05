@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: black;
+    color: #C0A080; /* Coffee Brown */
+    text-align: center;
+}
+
+.terminal {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #C0A080;
+    background: black;
+    box-shadow: 0 0 15px #C0A080;
+}
+
+a {
+    color: #C0A080;
+    text-decoration: none;
+}
+
+.hint {
+    animation: glitch 1s infinite;
+    color: #FFC107;
+}
+
+.highlight {
+    color: #FF5722; /* Espresso Orange */
+}
+
+@keyframes glitch {
+    0% { opacity: 1; transform: translateX(0); }
+    20% { opacity: 0.8; transform: translateX(-2px); }
+    40% { opacity: 1; transform: translateX(2px); }
+    60% { opacity: 0.9; transform: translateX(-1px); }
+    80% { opacity: 1; transform: translateX(1px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
