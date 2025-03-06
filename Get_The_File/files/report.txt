@@ -2,3 +2,6 @@ ShadowCorp Security Report:
 
 WARNING! Unauthorized access detected!
 We suspect a backdoor in our system...
+
+
+<!-- Get the /flag.txt -->
