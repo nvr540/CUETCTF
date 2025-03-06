@@ -32,6 +32,9 @@ def read_file():
 
     except Exception as e:
         return f"<p style='color: red;'>Error: {str(e)}</p>"
+@app.route("/robots.txt")
+def robot():
+    return "<p>User-agent: *<br>Disallow: /read/</p>"
 
 if __name__ == "__main__":
     app.run(debug=True)
